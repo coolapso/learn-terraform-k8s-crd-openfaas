@@ -43,7 +43,7 @@ resource "kubernetes_namespace" "openfaas" {
   }
 }
 
-resource "kubernetes_namespace" "openfaas-fn" {
+resource "kubernetes_namespace" "openfaas_fn" {
   lifecycle {
     ignore_changes = [metadata]
   }
